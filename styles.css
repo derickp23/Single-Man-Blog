@@ -1,0 +1,16 @@
+h1, h2, h3 {
+    color: rgb(47, 0, 255);
+  }
+
+  a:link {
+    color: rgb(26, 11, 241);
+  }
+  
+  a:visited {
+    color: rgb(10, 241, 10);
+  }
+  a:hover {
+    text-decoration: green;
+  }
+  .blogbackground {
+    background-color: rgb(153,102,153);
