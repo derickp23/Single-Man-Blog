@@ -1,9 +1,9 @@
-h1, h2, h3 {
-    color: rgb(47, 0, 255);
+h1, h2, h3, footer {
+    color: rgb(43, 255, 0);
   }
 
   a:link {
-    color: rgb(26, 11, 241);
+    color: rgb(43, 255, 0);
   }
   
   a:visited {
@@ -14,3 +14,4 @@ h1, h2, h3 {
   }
   .blogbackground {
     background-color: rgb(153,102,153);
+
