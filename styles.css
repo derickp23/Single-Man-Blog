@@ -1,16 +1,34 @@
+ *{ margin: 10;
+    padding: 10;           
+    box-sizing: border-box;}
+
+ h1 {text-align: center;}
+
+ ul, nav{list-style: none;}
+
+ body {color: blue;
+       font: normal 22px;
+       text-align: center}
+ hr {width: 150px;
+     height: 2px;
+     background-color: aquamarine;
+     border: 0;
+     margin: 40px auto;} 
+
 .box {
   display: flex;
   text-align: center;
   flex-flow: row wrap;
 }
 img {
-  border: 1px solid #ddd;
+  border: 6px solid #2f00ff;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
   height: 200px;
   justify-content: center;
 }
+
 .body {
   /* Set rules to fill background */
   min-height: 100%;
@@ -38,19 +56,21 @@ img:hover {
 }
 
 h1, h2, h3, footer {
-    color: rgb(43, 255, 0);
+    color: #2f00ff;
   }
 
+  a {}
   a:link {
-    color: rgb(43, 255, 0);
+    color: #2f00ff;
+    ;
   }
   
   a:visited {
-    color: rgb(10, 241, 10);
+    color:blue;
   }
 
   a:hover {
-    text-decoration: green;
+    text-decoration: rgb(2, 0, 128);
   }
 
 
