@@ -1,8 +1,7 @@
 .class {list-style-type: none;
           display: inline;}
 
- body {color: blue;
-       font: normal 22px;
+ body {font: normal 22px;
        text-align: center;}
 
  hr {width: 150px;
@@ -44,8 +43,18 @@ img:hover {
 h1, h2, h3, footer {
     color: #2f00ff;}
 
-  a:link {
+a:link {
     color: #2f00ff;}
   
-  a:visited {
+a:visited {
     color:blue;}
+  
+.description {margin-left: 0%; }
+
+ul{list-style-type: none;
+    margin: 20;
+    padding: 20;
+    text-align: center;
+    margin-top: 80px;}
+
+.Contact {list-style-type: none;}
