@@ -1,33 +1,23 @@
- *{ margin: 10;
-    padding: 10;           
-    box-sizing: border-box;}
-
- h1 {text-align: center;}
-
- ul, nav{list-style: none;}
+.class {list-style-type: none;
+          display: inline;}
 
  body {color: blue;
        font: normal 22px;
-       text-align: center}
+       text-align: center;}
+
  hr {width: 150px;
      height: 2px;
      background-color: aquamarine;
      border: 0;
      margin: 40px auto;} 
 
-.box {
-  display: flex;
-  text-align: center;
-  flex-flow: row wrap;
-}
 img {
   border: 6px solid #2f00ff;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
   height: 200px;
-  justify-content: center;
-}
+  justify-content: center;}
 
 .body {
   /* Set rules to fill background */
@@ -41,36 +31,21 @@ img {
   /* Set up positioning */
   position: fixed;
   top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
+  left: 0;}
+  
+.grid {width: 100%;
+            display: flex; 
+            flex-wrap: wrap;               
+            justify-content: center;}   
 
 img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);}
 
 h1, h2, h3, footer {
-    color: #2f00ff;
-  }
+    color: #2f00ff;}
 
-  a {}
   a:link {
-    color: #2f00ff;
-    ;
-  }
+    color: #2f00ff;}
   
   a:visited {
-    color:blue;
-  }
-
-  a:hover {
-    text-decoration: rgb(2, 0, 128);
-  }
-
-
+    color:blue;}
