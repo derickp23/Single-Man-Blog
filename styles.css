@@ -5,7 +5,8 @@
 body {
   background-color: powderblue;
   text-align: left;
-  font-family: sans-serif;
+  font-family: 'Libre Baskerville', serif, sans-serif;
+  line-height: 1.8;
   color:#2f00ff;
 }
 
@@ -17,9 +18,15 @@ body {
 
 h1,
 h2 {
+  font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   padding: 5px;
+  margin: 10px 0;
+
 }
+
+p {margin: 10px 10px;}
 
 img {
   border-radius: 15px;
