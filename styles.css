@@ -93,7 +93,7 @@ ul {
 .title {
   width: 1300px;
   height: 100px;
-  background-color: rgb(38, 0, 255);
+  background-color: rgb(4, 0, 255);
   position: relative;
   animation-name: float;
   animation-duration: 4s;
@@ -103,6 +103,6 @@ ul {
   0%   {background-color:rgb(4, 0, 255); left:0px; top:0px;}
   25%  {background-color:rgb(0, 195, 255); left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:rgb(0, 102, 128); left:0px; top:200px;}
-  100% {background-color:rgb(0, 17, 255); left:0px; top:0px;}
+  75%  {background-color:rgb(0, 195, 255); left:0px; top:200px;}
+  100% {background-color:rgb(4, 0, 255); left:0px; top:0px;}
 }
