@@ -92,14 +92,14 @@ ul {
 
 .title {
   width: 1300px;
-  height: 200px;
+  height: 100px;
   background-color: rgb(38, 0, 255);
   position: relative;
-  animation-name: example;
+  animation-name: float;
   animation-duration: 4s;
 }
 
-@keyframes example {
+@keyframes float {
   0%   {background-color:rgb(76, 0, 255); left:0px; top:0px;}
   25%  {background-color:rgb(204, 0, 255); left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
