@@ -7,14 +7,13 @@ body {
   text-align: left;
   font-family: 'Libre Baskerville', serif, sans-serif;
   line-height: 1.8;
-  color:#2f00ff;
-}
+  color:#2f00ff;}
 
 @media only screen and (max-width: 800px) {
   body {
-    background-color: darkblue;
-  }
+    background-color: darkblue;}
 }
+
 
 h1,
 h2 {
@@ -59,7 +58,7 @@ img:hover {
 }
 
 a:link {
-  color: #2f00ff;
+  color: none;
 }
 
 a:visited {
@@ -82,4 +81,28 @@ ul {
   padding: 20;
   text-align: center;}
 
+  .navbar {justify-content: center;}
 
+ .navbar ul {display: flex;} 
+ .navbar a {color: #2f00ff;
+            padding: 10p;
+            margin: 0 5px;  }
+
+.navbar a:hover {border-bottom: 2px #fff solid;}
+
+.title {
+  width: 1300px;
+  height: 200px;
+  background-color: rgb(38, 0, 255);
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:rgb(76, 0, 255); left:0px; top:0px;}
+  25%  {background-color:rgb(204, 0, 255); left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:rgb(92, 0, 128); left:0px; top:200px;}
+  100% {background-color:rgb(0, 17, 255); left:0px; top:0px;}
+}
