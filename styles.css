@@ -3,7 +3,7 @@
    margin: 0;}
 
 body {
-  background-color: powderblue;
+  background-color: rgb(0, 195, 255);
   text-align: left;
   font-family: 'Libre Baskerville', serif, sans-serif;
   line-height: 1.8;
@@ -25,7 +25,8 @@ h2 {
 
 }
 
-p {margin: 10px 10px;}
+p {margin: 15px 15px;
+   padding: 20px;      }
 
 img {
   border-radius: 15px;
@@ -81,19 +82,20 @@ ul {
   padding: 20;
   text-align: center;}
 
-  .navbar {justify-content: center;}
+.navbar {justify-content: center;}
 
- .navbar ul {display: flex;} 
- .navbar a {color: #2f00ff;
+.navbar ul {display: flex;} 
+.navbar a {color: #2f00ff;
             padding: 10p;
             margin: 0 5px;  }
 
 .navbar a:hover {border-bottom: 2px #fff solid;}
 
+/* CSS animation */
 .title {
   width: 1300px;
   height: 100px;
-  background-color: rgb(4, 0, 255);
+  background-color: rgb(0, 195, 255);
   position: relative;
   animation-name: float;
   animation-duration: 4s;
@@ -103,6 +105,36 @@ ul {
   0%   {background-color:rgb(4, 0, 255); left:0px; top:0px;}
   25%  {background-color:rgb(0, 195, 255); left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:rgb(0, 195, 255); left:0px; top:200px;}
-  100% {background-color:rgb(4, 0, 255); left:0px; top:0px;}
+  75%  {background-color:rgba(255, 0, 212, 0.274); left:0px; top:200px;}
+  100% {background-color:rgb(0, 195, 255); left:0px; top:0px;}
+}
+
+/*  navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 195, 255);
+}
+
+/*  topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(4, 0, 255);
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+/* color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(4, 0, 255);
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
