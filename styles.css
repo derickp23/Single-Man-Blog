@@ -138,3 +138,10 @@ ul {
     width: 100%;
   }
 }
+
+/* On screens that are 1000px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+  }
+}
