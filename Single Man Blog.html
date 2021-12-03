@@ -10,88 +10,89 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;display=swap" rel="stylesheet">
-  <body>   
+  <style>
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+  </style>
+  
+    <body>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("Relationship");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction() {
+        var x = document.getElementById("Inspirational");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
 
-<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-
-    
+      </script> 
+    </body>      
    <header>
-  <nav class="navbar">
-    <a href="#" class="nav-branding"></a>
-
-    <ul class="nav-menu">
-      <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-
-    </div>
-
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="#relationship">Relationship Quotes</a></li>
+        <li><a href="#inspirational">Inspirational Quotes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
 
 </header>
   </body>
- <section id="Relationship">
   <div class="flex-container">
     <h1>Single Man Blog</h1>
     <div class="text">
       <p>Hello world. My name is Derick and this is my blog. I know...another blog just what the world needs, right? I created this blog as a way to let people into my world. I wanna show you my perspective on things and hopefully we can learn and grow together. Let's build a unique space on the web for us to come together and express our experiences.</p>
     </div>
   </div>
-  <h2>Relationship Quotes</h2>
+  <h2 id="relationship">Relationship Quotes</h2>
   <div class="flex-container">
     <div class="text">
       <p>Relationships are very important part of our lives. It's important that we cultivate each important relationship in our lives. Strong relationships play a key role in our continued happiness. Honest and open dialogue can lead to even stronger connections. Being able to express one's self is vital for growth.</p>
     </div>
   </div>
   <div class="flex-container">
+  <button onclick="myFunction()">Relationship Quotes</button>
+      <div id="Relationship">
     <a target="_blank" href="RelationshipQuote1.jpg"><img src="RelationshipQuote1.jpg" alt="Right one" style="width: 300px"></a><a target="_blank" href="RelationshipQuote3.jpg"><img src="RelationshipQuote3.jpg" alt="toxic" style="width: 300px"></a><a target="_blank" href="RelationshipQuote4.jpg"><img src="RelationshipQuote4.jpg" alt="Right One" style="width: 300px"></a><a target="_blank" href="RelationshipQuote5.jpg"><img src="RelationshipQuote5.jpg" alt="Effort" style="width: 300px"></a><a target="_blank" href="RelationshipQuote6.jpg"><img src="RelationshipQuote6.jpg" alt="Work" style="width: 300px"></a><a target="_blank" href="RelationshipQuote7.jpg"><img src="RelationshipQuote7.jpg" alt="Don't expect the same" style="width: 300px"></a><a target="_blank" href="RelationshipQuote8.jpg"><img src="RelationshipQuote8.jpg" alt="settling down" style="width: 300px"></a><a target="_blank" href="RelationshipQuote9.jpg"><img src="RelationshipQuote9.jpg" alt="fine line" style="width: 300px"></a>
+      </div>
   </div>
-</section>
-<section id="Inspirational">
-  <h2>Inspirational Quotes</h2>
+  <h2 id="inspirational">Inspirational Quotes</h2>
   <div class="flex-container">
     <div class="text">
   <p>In order to increase our happiness we need to stay inspired. We most stay motivated and curious about our life experiences. Inspiration is all around us and we must learn to observe it and really appreciate it each and every day.</p></div>
   <div class="flex-container">
+    <button onclick="myFunction()">Inspirational Quotes</button>
+      <div id="Inspirational">
     <a target="_blank" href="InspirationalQuote1.jpg"><img src="InspirationalQuote1.jpg" alt="Failure" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote2.jpg"><img src="InspirationalQuote2.jpg" alt="Sometimes" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote3.jpg"><img src="InspirationalQuote3.jpg" alt="expect" style="width: 300px"></a><a target="_blank" href="InspirationalQuote4.jpg"><img src="InspirationalQuote4.jpg" alt="beautiful struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote5.jpg"><img src="InspirationalQuote5.jpg" alt="struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote6.jpg"><img src="InspirationalQuote6.jpg" alt="never quit" style="width: 300px"></a><a target="_blank" href="InspirationalQuote7.jpg"><img src="InspirationalQuote7.jpg" alt="grind" style="width: 300px"></a><a target="_blank" href="InspirationalQuote8.jpg"><img src="InspirationalQuote8.jpg" alt="great things" style="width: 300px"></a>
   </div>
 </section>
+
+  <footer id="contact">  
 <div class="flex-container">
   <div class="Contact">
     <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp
-
-    <body>
        
       <form method="get" action="thanks.html">
       <label>First Name <span>(required)</span><input type="text" name="name" required></label>
       <label>Email <span>(required)</span><input type="email" name="email" placeholder="youremail@gmail.com" required></label>
       <label>Your Question<textarea></textarea></label>
       <input type="submit" value="Ask My Question" class="SubmitBtn">
-
-    
-    </form>
-
-
-
-
-      </body>     
+    </form> 
+  </section>    
     <footer>
       <p>©Single Man Quotes. All rights reserved.</p>
   </div>
-</section>
-</div>
