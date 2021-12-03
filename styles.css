@@ -5,13 +5,13 @@
    text-decoration: none;     }   
    
    button {
-    background-color: rgb(4, 0, 255);
-    border: none;
+    background-color: rgba(0, 140, 186, 0.5);
+    border-color: rgb(4, 0, 255);
     color: white;
+    text-decoration: ;
     padding: 15px;
     text-align: center;
     margin: 30px;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     
@@ -50,7 +50,8 @@ input.submitBtn {border: none; background-color: white; color:white; font-size: 
 header { background-color: rgb(0, 195, 255);}  
 
 li {display: inline;
-padding: 5px;}
+padding: 5px;
+margin: 15px;}
 
 a {color: white;
           text-decoration: none;}    
@@ -133,8 +134,8 @@ a:visited {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: space-around;
   align-content: flex-start;
+  margin: 8px;
 }
 
 /* CSS animation */
@@ -153,43 +154,6 @@ a:visited {
   50%  {background-color:blue; left:200px; top:200px;}
   75%  {background-color:rgba(255, 0, 212, 0.274); left:0px; top:200px;}
   100% {background-color:rgb(0, 195, 255); left:0px; top:0px;}
-}
-
-/*  navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: rgb(0, 195, 255);
-}
-
-/*  topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: rgb(4, 0, 255);
-  text-align: center;
-  padding: 18px 20px;
-  text-decoration: none;
-}
-
-/* color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: rgb(4, 0, 255);
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-
-/* On screens that are 1000px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 50%;
-  }
 }
 
 .container {
