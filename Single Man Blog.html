@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;display=swap" rel="stylesheet">
+  <script src="My Final Project/script.js"></script>
+</head>
+<body>
   <style>
     #myDIV {
       width: 100%;
@@ -19,11 +22,9 @@
       margin-top: 20px;
     }
   </style>
-  
-    <body>
       <script>
       function myFunction() {
-        var x = document.getElementById("Relationship");
+        var x = document.getElementById("Relationshipquotes");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
@@ -31,27 +32,22 @@
         }
       }
       function myFunction() {
-        var x = document.getElementById("Inspirational");
+        var x = document.getElementById("Inspirationalquotes");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-
-      </script> 
-    </body>      
+      </script>     
    <header>
-    <nav>
-      <ul>
-        <li><a href="#relationship">Relationship Quotes</a></li>
-        <li><a href="#inspirational">Inspirational Quotes</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="topnav">
+        <a href="#relationship">Relationship Quotes</a>
+        <a href="#inspirational">Inspirational Quotes</a>
+        <a href="#contact">Contact Us</a>
+      </div>
 
 </header>
-  </body>
   <div class="flex-container">
     <h1>Single Man Blog</h1>
     <div class="text">
@@ -66,7 +62,7 @@
   </div>
   <div class="flex-container">
     <button onclick="myFunction()"><b>Relationship Quotes</b></button>
-      <div id="Relationship">
+      <div id="Relationshipquotes">
     <a target="_blank" href="RelationshipQuote1.jpg"><img src="RelationshipQuote1.jpg" alt="Right one" style="width: 300px"></a><a target="_blank" href="RelationshipQuote3.jpg"><img src="RelationshipQuote3.jpg" alt="toxic" style="width: 300px"></a><a target="_blank" href="RelationshipQuote4.jpg"><img src="RelationshipQuote4.jpg" alt="Right One" style="width: 300px"></a><a target="_blank" href="RelationshipQuote5.jpg"><img src="RelationshipQuote5.jpg" alt="Effort" style="width: 300px"></a><a target="_blank" href="RelationshipQuote6.jpg"><img src="RelationshipQuote6.jpg" alt="Work" style="width: 300px"></a><a target="_blank" href="RelationshipQuote7.jpg"><img src="RelationshipQuote7.jpg" alt="Don't expect the same" style="width: 300px"></a><a target="_blank" href="RelationshipQuote8.jpg"><img src="RelationshipQuote8.jpg" alt="settling down" style="width: 300px"></a><a target="_blank" href="RelationshipQuote9.jpg"><img src="RelationshipQuote9.jpg" alt="fine line" style="width: 300px"></a>
     </div>
   </div>
@@ -76,23 +72,14 @@
   <p>In order to increase our happiness we need to stay inspired. We most stay motivated and curious about our life experiences. Inspiration is all around us and we must learn to observe it and really appreciate it each and every day. It sounds corny to say but we forget to take time to be inspired everyday. Life gives us something everyday that can inspire us but sometimes we just don't pay attention. We need to stay motivated...stay inspired...enjoy every moment life gives us. </p></div>
   <div class="flex-container">
     <button onclick="myFunction()"><b>Inspirational Quotes</b></button>
-      <div id="Inspirational">
+      <div id="Inspirationalquotes">
     <a target="_blank" href="InspirationalQuote1.jpg"><img src="InspirationalQuote1.jpg" alt="Failure" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote2.jpg"><img src="InspirationalQuote2.jpg" alt="Sometimes" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote3.jpg"><img src="InspirationalQuote3.jpg" alt="expect" style="width: 300px"></a><a target="_blank" href="InspirationalQuote4.jpg"><img src="InspirationalQuote4.jpg" alt="beautiful struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote5.jpg"><img src="InspirationalQuote5.jpg" alt="struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote6.jpg"><img src="InspirationalQuote6.jpg" alt="never quit" style="width: 300px"></a><a target="_blank" href="InspirationalQuote7.jpg"><img src="InspirationalQuote7.jpg" alt="grind" style="width: 300px"></a><a target="_blank" href="InspirationalQuote8.jpg"><img src="InspirationalQuote8.jpg" alt="great things" style="width: 300px"></a>
   </div>
+</body>
 </section>
 
-  <footer id="contact">  
-<div class="flex-container">
-  <div class="Contact">
-    <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp
-       
-      <form method="get" action="thanks.html">
-      <label>First Name <span>(required)</span><input type="text" name="name" required></label>
-      <label>Email <span>(required)</span><input type="email" name="email" placeholder="youremail@gmail.com" required></label>
-      <label>Your Question<textarea></textarea></label>
-      <input type="submit" value="Ask My Question" class="SubmitBtn">
-    </form> 
-  </section>    
+  <footer id="contact">
+    <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp</div>  
     <footer>
       <p>©Single Man Quotes. All rights reserved.</p>
   </div>
