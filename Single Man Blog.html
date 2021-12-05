@@ -58,19 +58,20 @@
       <div id="Inspirationalquotes">
     <a target="_blank" href="InspirationalQuote1.jpg"><img src="InspirationalQuote1.jpg" alt="Failure" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote2.jpg"><img src="InspirationalQuote2.jpg" alt="Sometimes" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote3.jpg"><img src="InspirationalQuote3.jpg" alt="expect" style="width: 300px"></a><a target="_blank" href="InspirationalQuote4.jpg"><img src="InspirationalQuote4.jpg" alt="beautiful struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote5.jpg"><img src="InspirationalQuote5.jpg" alt="struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote6.jpg"><img src="InspirationalQuote6.jpg" alt="never quit" style="width: 300px"></a><a target="_blank" href="InspirationalQuote7.jpg"><img src="InspirationalQuote7.jpg" alt="grind" style="width: 300px"></a><a target="_blank" href="InspirationalQuote8.jpg"><img src="InspirationalQuote8.jpg" alt="great things" style="width: 300px"></a>
   </div>
-  <div class="EX">
-  <h3>Ex generator:</h3>
-  <p> Refresh the page to see how many Ex's you will have.....</p>
-    <p id="EX"></p>
-    <script>
-    document.getElementById("EX").innerHTML =
-    Math.floor(Math.random() * 101);
-    </script>
-    </div>
 </body>
 </section>
+
+<p>Refresh the page to see how many ex's you will have :)</p>
+<p id="demo"></p>
+      <script>
+       let x = Math.floor((Math.random() * 100) + 1);
+       document.getElementById("demo").innerHTML = x;
+       </script>
+      </section>
+
 <div class="wrapper"> 
   <form class="form">
+    <p>Sign In</p>
 
       <label id="nameField">
           <input type="text" name="nameField" placeholder="name" required/>
@@ -96,40 +97,30 @@
 
   </form>
 </div>
-<script>
 
-  const wrapper=document.querySelector('.wrapper'), 
-        form   =wrapper.querySelectorAll ('.form'),
-        submitInput = form[0].querySelector('input[type="submit"]');
-
-        function getDataForm(e){e.preventDefault();
-        var formData = new FormData(form[0]);
-        
-
-        alert( formData.get('nameField') + ' - '+ formData.get('emailField') + ' - ' + formData.get('passwordField'));}
-
-        document.addEventListener('DOMContentLoaded', function(){submitInput.addEventListener('click', getDataForm, false);}, false);
-
-</script>
-
-<div class="footer">
-  <div id="contact"></div>
-    <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp  
-    <script type="text/javascript">
-      function submitform()
-      {
-      document.forms["nameofform"].submit();
-      }
-
+<footer id="contact">
+  <section class="footer">
+      <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp  
+      <p>©Single Man Quotes. All rights reserved.</p></footer></div></html></div>
+      </section></div>
       
       
-
-
-
-
-
-
-    
-    
-    <p>©Single Man Quotes. All rights reserved.</p>
+      <section class="body">
+        <div>
+      <script>
+      
+        const wrapper=document.querySelector('.wrapper'), 
+              form   =wrapper.querySelectorAll ('.form'),
+              submitInput = form[0].querySelector('input[type="submit"]');
+      
+              function getDataForm(e){e.preventDefault();
+              var formData = new FormData(form[0]);
+              
+      
+              alert( formData.get('nameField') + ' - '+ formData.get('emailField') + ' - ' + formData.get('passwordField'));}
+      
+              document.addEventListener('DOMContentLoaded', function(){submitInput.addEventListener('click', getDataForm, false);}, false);
+      
+      </script>
+      </div></html>
   
