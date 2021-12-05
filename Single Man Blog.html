@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;display=swap" rel="stylesheet">
-  <script src="My Final Project/script.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <style>
@@ -22,24 +22,7 @@
       margin-top: 20px;
     }
   </style>
-      <script>
-      function myFunction() {
-        var x = document.getElementById("Relationshipquotes");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      function myFunction() {
-        var x = document.getElementById("Inspirationalquotes");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>     
+        
    <header>
     <div class="topnav">
         <a href="#relationship">Relationship Quotes</a>
@@ -75,11 +58,78 @@
       <div id="Inspirationalquotes">
     <a target="_blank" href="InspirationalQuote1.jpg"><img src="InspirationalQuote1.jpg" alt="Failure" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote2.jpg"><img src="InspirationalQuote2.jpg" alt="Sometimes" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote3.jpg"><img src="InspirationalQuote3.jpg" alt="expect" style="width: 300px"></a><a target="_blank" href="InspirationalQuote4.jpg"><img src="InspirationalQuote4.jpg" alt="beautiful struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote5.jpg"><img src="InspirationalQuote5.jpg" alt="struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote6.jpg"><img src="InspirationalQuote6.jpg" alt="never quit" style="width: 300px"></a><a target="_blank" href="InspirationalQuote7.jpg"><img src="InspirationalQuote7.jpg" alt="grind" style="width: 300px"></a><a target="_blank" href="InspirationalQuote8.jpg"><img src="InspirationalQuote8.jpg" alt="great things" style="width: 300px"></a>
   </div>
+  <div class="EX">
+  <h3>Ex generator:</h3>
+  <p> Refresh the page to see how many Ex's you will have.....</p>
+    <p id="EX"></p>
+    <script>
+    document.getElementById("EX").innerHTML =
+    Math.floor(Math.random() * 101);
+    </script>
+    </div>
 </body>
 </section>
+<div class="wrapper"> 
+  <form class="form">
 
-  <footer id="contact">
-    <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp</div>  
-    <footer>
-      <p>©Single Man Quotes. All rights reserved.</p>
-  </div>
+      <label id="nameField">
+          <input type="text" name="nameField" placeholder="name" required/>
+
+      </label>
+
+      <label id="emailField">
+          <input type="email" name="emailField" placeholder="email" required/>
+
+      </label>
+
+      <label id="passwordField">
+          <input type="password" name="passwordField" placeholder="password" required/>
+
+      </label>
+
+      <label id="passwordVerifyField">
+          <input type="password" name="passwordVerifyField" placeholder="verify password" required/>
+
+      </label>
+
+      <input type="submit" value="submit" name="submit"/>
+
+  </form>
+</div>
+<script>
+
+  const wrapper=document.querySelector('.wrapper'), 
+        form   =wrapper.querySelectorAll ('.form'),
+        submitInput = form[0].querySelector('input[type="submit"]');
+
+        function getDataForm(e){e.preventDefault();
+        var formData = new FormData(form[0]);
+        
+
+        alert( formData.get('nameField') + ' - '+ formData.get('emailField') + ' - ' + formData.get('passwordField'));}
+
+        document.addEventListener('DOMContentLoaded', function(){submitInput.addEventListener('click', getDataForm, false);}, false);
+
+</script>
+
+<div class="footer">
+  <div id="contact"></div>
+    <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp  
+    <script type="text/javascript">
+      function submitform()
+      {
+      document.forms["nameofform"].submit();
+      }
+
+      
+      
+
+
+
+
+
+
+    
+    
+    <p>©Single Man Quotes. All rights reserved.</p>
+  

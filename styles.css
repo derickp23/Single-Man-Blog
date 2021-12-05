@@ -26,22 +26,22 @@
     justify-content: center;
     align-items: space-around;
     align-content: flex-start;}
-   
- form {margin: 1rem gutter;
-       max-width: 25rem;}  
 
- label {display: block;
-        padding: .75rem 0;
-      }
+.wrapper {width: 400px;
+          max-width: 90%;
+          margin: 0 auto;}  
+          
+.wrapper label{ display: block;
+                margin: 0.5em 0;}   
+                
+.wrapper label input{font-size: 18px;
+                     padding: 0.5em;}    
+                     
+.wrapper input [type="submit"]{font-size: 25px;
+color:blue}                    
 
-  input, textarea {display: block;
-  font-size: 1rem;
-  padding: .75rem;
-  background-color: #f6f6f6;
-  border: 1px solid #bbb;
-  margin-top: .2rem;
-  width: 100%;
-}    
+.EX {text-align: center;
+margin-top: 100px;}    
 
 footer { padding: 70px;}
 
@@ -69,11 +69,6 @@ body {
   font-family: 'Libre Baskerville', serif, sans-serif;
   line-height: 1.8;
   color:#2f00ff;}
-
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: darkblue;}
-}
 
 h1,
 h2 {
@@ -144,6 +139,17 @@ a:visited {
   cursor: pointer;
 }
 
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin-top: 200px;
+  background-color: rgb(0, 195, 255);
+  color: rgb(4, 0, 255);
+  text-align: center;}
+
 /* top navigation bar */
 .topnav {
   overflow: hidden;
@@ -174,10 +180,15 @@ a:visited {
   }
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
+/* On screens that are 1000px wide or less, flex-containers stack vertically */
+@media screen and (max-width: 1000px) {
   .flex-container {
-    width: 50%;
+    width: 80%;
   }
 }
 
+/* Changes background to darkblue at 800px or less */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: darkblue;}
+}
