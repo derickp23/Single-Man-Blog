@@ -84,6 +84,8 @@ img:hover {
 
 a:link {
   text-decoration: slateblue;
+  text-decoration: underline;
+  text-decoration: #2f00ff;
 }
 
 a:visited {
@@ -122,22 +124,29 @@ a:visited {
   bottom: 0;
   width: 100%;
   height: 20%;
-  margin-top: 300px;
+  margin-top: 200px;
+  padding: 50px;
   background-color: rgb(0, 195, 255);
   color: rgb(4, 0, 255);
   text-align: center;
   display: inline-block;}
 
+
+/* Scroll bar */
   ul {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
-  }
+  } 
 
 /* top navigation bar */
 .topnav {
   overflow: hidden;
   background-color:rgb(0, 195, 255);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 /* topnav links */
@@ -176,4 +185,5 @@ a:visited {
   body {
     background-color: darkblue;}
 }
+
 
