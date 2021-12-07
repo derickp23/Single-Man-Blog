@@ -4,13 +4,15 @@ function hidequotes() {
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
-      x.style.display = "none";}
-        var x = document.getElementById("Inspirationalquotes");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }}
+      x.style.display = "none";}}
+
+
+ function dropquotes() {
+    var x = document.getElementById("InspirationalQuote");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";}}       
 
 
 
