@@ -1,4 +1,4 @@
-
+/* Javascript for button to hide quotes */
 function hidequotes() {
     var x = document.getElementById("Relationshipquotes");
     if (x.style.display === "none") {
