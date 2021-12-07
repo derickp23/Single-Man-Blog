@@ -15,8 +15,6 @@ function hidequotes() {
 
 
 
-
-
         
 
        

@@ -51,54 +51,34 @@
   <p>In order to increase our happiness we need to stay inspired. We most stay motivated and curious about our life experiences. Inspiration is all around us and we must learn to observe it and really appreciate it each and every day. It sounds corny to say but we forget to take time to be inspired everyday. Life gives us something everyday that can inspire us but sometimes we just don't pay attention. We need to stay motivated...stay inspired...enjoy every moment life gives us. </p></div>
   <div class="flex-container">
     <button onclick="hidequotes()"><b>Inspirational Quotes</b></button></div>
-    <div id="Inspirationalquotes">
+    <div id="InspirationalQuote">
     </div>
   
     <script>
       for (var i = 0, j = 8; i < j; i++){
-        let quoteDiv = document.getElementById("Inspirationalquotes")
+        let quoteDiv = document.getElementById("InspirationalQuote")
         let imageNumber = i + 1
   
-        quoteDiv.innerHTML += '<a target="_blank" href="RelationshipQuote'+ imageNumber +'.jpg">';
-        quoteDiv.innerHTML += '<img src="images/RelationshipQuote'+ imageNumber + '.jpg" style="width: 300px">'
+        quoteDiv.innerHTML += '<a target="_blank" href="InspirationalQuote'+ imageNumber +'.jpg">';
+        quoteDiv.innerHTML += '<img src="images/InspirationalQuote'+ imageNumber + '.jpg" style="width: 300px">'
         quoteDiv.innerHTML += '</a>'
       }
     </script>
 
 <p>Refresh the page to see how many ex's you will have :)</p>
-<div class="demo">
-<p id="demo"></p>
+<div class="Ex">
+<p id="Ex"></p>
       <script>
        let x = Math.floor((Math.random() * 100) + 1);
-       document.getElementById("demo").innerHTML = x;
+       document.getElementById("Ex").innerHTML = x;
        </script>
     </div>
-</body>
+  </main>
 
 <footer id="contact">
   <section class="footer">
       <a href="mailto:singlemanquotes@yahoo.com" title="Single Man Quotes email address">Contact Us</a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/singlemanquotes" title="Single Man Quotes Facebook page">Facebook</a>&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/singlemanquotes?lang=en" title=" Single Man Quotes Twitter page">Twitter</a>&nbsp  
       <p>©Single Man Quotes. All rights reserved.</p></footer></section>
-      
-      
-  <section class="footer">
-      <script>
-      
-        const wrapper=document.querySelector('.wrapper'), 
-              form   =wrapper.querySelectorAll ('.form'),
-              submitInput = form[0].querySelector('input[type="submit"]');
-      
-              function getDataForm(e){e.preventDefault();
-              var formData = new FormData(form[0]);
-              
-      
-              alert( formData.get('nameField') + ' - '+ formData.get('emailField') + ' - ' + formData.get('passwordField'));}
-      
-              document.addEventListener('DOMContentLoaded', function(){submitInput.addEventListener('click', getDataForm, false);}, false);
-      
-      </script>
-      </section>
-    </main>
-  </body>
-      </html>
+       </body>
+          </html>
   
