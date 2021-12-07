@@ -11,17 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
-<body>
-  <style>
-    #myDIV {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-  }
-  </style>
-        
+<body>   
    <header>
      <nav>
     <div class="topnav">
@@ -42,54 +32,47 @@
       <p>Relationships are very important part of our lives. It's important that we cultivate each important relationship in our lives. Strong relationships play a key role in our continued happiness. Honest and open dialogue can lead to even stronger connections. Being able to express one's self is vital for growth. Relationships are not always easy to talk about and sometimes a complete stranger can provide the perspective we need. This can be a space can even cultivate new relationships as we learn and grow together.</p>
     </div>
   <div class="flex-container">
-    <button onclick="myFunction()"><b>Relationship Quotes</b></button></div>
-      <div id="Relationshipquotes">
-    <a target="_blank" href="RelationshipQuote1.jpg"><img src="RelationshipQuote1.jpg" alt="Right one" style="width: 300px"></a><a target="_blank" href="RelationshipQuote3.jpg"><img src="RelationshipQuote3.jpg" alt="toxic" style="width: 300px"></a><a target="_blank" href="RelationshipQuote4.jpg"><img src="RelationshipQuote4.jpg" alt="Right One" style="width: 300px"></a><a target="_blank" href="RelationshipQuote5.jpg"><img src="RelationshipQuote5.jpg" alt="Effort" style="width: 300px"></a><a target="_blank" href="RelationshipQuote6.jpg"><img src="RelationshipQuote6.jpg" alt="Work" style="width: 300px"></a><a target="_blank" href="RelationshipQuote7.jpg"><img src="RelationshipQuote7.jpg" alt="Don't expect the same" style="width: 300px"></a><a target="_blank" href="RelationshipQuote8.jpg"><img src="RelationshipQuote8.jpg" alt="settling down" style="width: 300px"></a><a target="_blank" href="RelationshipQuote9.jpg"><img src="RelationshipQuote9.jpg" alt="fine line" style="width: 300px"></a>
-    </div>
+    <button onclick="hidequotes()"><b>Relationship Quotes</b></button></div>
+    <div id="Relationshipquotes">
+  </div>
+    <script>
+      for (var i = 0, j = 8; i < j; i++){
+        let quoteDiv = document.getElementById("Relationshipquotes")
+        let imageNumber = i + 1
+  
+        quoteDiv.innerHTML += '<a target="_blank" href="RelationshipQuote'+ imageNumber +'.jpg">';
+        quoteDiv.innerHTML += '<img src="images/RelationshipQuote'+ imageNumber + '.jpg" style="width: 300px">'
+        quoteDiv.innerHTML += '</a>'
+      }
+    </script>
+  
   <h2 id="inspirational">Inspirational Quotes</h2>
   <div class="flex-container">
   <p>In order to increase our happiness we need to stay inspired. We most stay motivated and curious about our life experiences. Inspiration is all around us and we must learn to observe it and really appreciate it each and every day. It sounds corny to say but we forget to take time to be inspired everyday. Life gives us something everyday that can inspire us but sometimes we just don't pay attention. We need to stay motivated...stay inspired...enjoy every moment life gives us. </p></div>
   <div class="flex-container">
-    <button onclick="myFunction()"><b>Inspirational Quotes</b></button></div>
-      <div id="Inspirationalquotes">
-    <a target="_blank" href="InspirationalQuote1.jpg"><img src="InspirationalQuote1.jpg" alt="Failure" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote2.jpg"><img src="InspirationalQuote2.jpg" alt="Sometimes" style="width: 300px"></a> <a target="_blank" href="InspirationalQuote3.jpg"><img src="InspirationalQuote3.jpg" alt="expect" style="width: 300px"></a><a target="_blank" href="InspirationalQuote4.jpg"><img src="InspirationalQuote4.jpg" alt="beautiful struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote5.jpg"><img src="InspirationalQuote5.jpg" alt="struggle" style="width: 300px"></a><a target="_blank" href="InspirationalQuote6.jpg"><img src="InspirationalQuote6.jpg" alt="never quit" style="width: 300px"></a><a target="_blank" href="InspirationalQuote7.jpg"><img src="InspirationalQuote7.jpg" alt="grind" style="width: 300px"></a><a target="_blank" href="InspirationalQuote8.jpg"><img src="InspirationalQuote8.jpg" alt="great things" style="width: 300px"></a>
-  </div>
+    <button onclick="hidequotes()"><b>Inspirational Quotes</b></button></div>
+    <div id="Inspirationalquotes">
+    </div>
+  
+    <script>
+      for (var i = 0, j = 8; i < j; i++){
+        let quoteDiv = document.getElementById("Inspirationalquotes")
+        let imageNumber = i + 1
+  
+        quoteDiv.innerHTML += '<a target="_blank" href="RelationshipQuote'+ imageNumber +'.jpg">';
+        quoteDiv.innerHTML += '<img src="images/RelationshipQuote'+ imageNumber + '.jpg" style="width: 300px">'
+        quoteDiv.innerHTML += '</a>'
+      }
+    </script>
 
 <p>Refresh the page to see how many ex's you will have :)</p>
+<div class="demo">
 <p id="demo"></p>
       <script>
        let x = Math.floor((Math.random() * 100) + 1);
        document.getElementById("demo").innerHTML = x;
        </script>
-
-<div class="wrapper"> 
-  <form class="form">
-    <p>Sign In</p>
-
-      <label id="nameField">
-          <input type="text" name="nameField" placeholder="name" required/>
-
-      </label>
-
-      <label id="emailField">
-          <input type="email" name="emailField" placeholder="email" required/>
-
-      </label>
-
-      <label id="passwordField">
-          <input type="password" name="passwordField" placeholder="password" required/>
-
-      </label>
-
-      <label id="passwordVerifyField">
-          <input type="password" name="passwordVerifyField" placeholder="verify password" required/>
-
-      </label>
-
-      <input type="submit" value="submit" name="submit"/>
-
-  </form>
-  </div>
+    </div>
 </body>
 
 <footer id="contact">

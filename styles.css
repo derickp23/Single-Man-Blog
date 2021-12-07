@@ -149,19 +149,20 @@ a:visited {
 
 /* CSS paragraph animation */
 p {
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: slidein;
   animation-iteration-count:1;
+  
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 150%;
     width: 300%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 150%;
   }
 }
 
@@ -190,7 +191,7 @@ p {
 
 /* If the screen size is 600px wide or less, the sign in form won't display */
 @media screen and (max-width: 600px) {
-  .wrapper {
+  .demo {
     display: none;
   }
 }
